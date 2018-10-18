@@ -8,10 +8,10 @@ from collections import OrderedDict
 import click
 from six import string_types
 
-from .utils import CONTEXT_SETTINGS, abort, echo_failure, echo_info, echo_success, echo_warning
+from .utils import CONTEXT_SETTINGS, abort, echo_failure, echo_info
 from ..constants import get_root
 from ...compat import JSONDecodeError
-from ...utils import file_exists, read_file, write_file
+from ...utils import file_exists, read_file
 
 REQUIRED_ATTRIBUTES = {
     'agent_version',
